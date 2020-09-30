@@ -1,4 +1,5 @@
 package com.cpf.camel.demo.hystraix;
+
 import org.apache.camel.builder.RouteBuilder;
 
 /**
@@ -10,10 +11,10 @@ public class HystrixRoute extends RouteBuilder {
     @Override
     public void configure() throws Exception {
         onException(Exception.class).handled(true).process(new FallbackProcessor());
-        from("jetty:http://0.0.0.0:9998/getToken").to("http4://127.0.0.1:8081/hsb/testDemo/serviceList?bridgeEndpoint=true" +
-                "&httpClient.connectTimeout="+(1000)+
-                "&httpClient.socketTimeout="+(1000)+
-                "&httpClient.connectionRequestTimeout="+(1000)+
+        from("jetty:http://0.0.0.0:9999/getToken").to("http4://127.0.0.1:8081/hsb/testDemo/serviceList?bridgeEndpoint=true" +
+                "&httpClient.connectTimeout=" + (1000) +
+                "&httpClient.socketTimeout=" + (1000) +
+                "&httpClient.connectionRequestTimeout=" + (1000) +
                 "&keepAlive=true");
 /*
         from("jetty:http://0.0.0.0:9998/getToken")

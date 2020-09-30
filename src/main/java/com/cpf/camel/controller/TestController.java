@@ -1,9 +1,6 @@
 package com.cpf.camel.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @作者：caopengfei
@@ -14,8 +11,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 
     @GetMapping("/say/{message}")
-    public String getHello(@PathVariable(name ="message" ) String message){
-        return "i say "+message;
+    public String getHello(@PathVariable(name = "message") String message) {
+        return "i say " + message;
+    }
+
+    @PostMapping("/say/{message}")
+    public String getPostHello(@PathVariable(name = "message") String message) {
+        return "i say post" + message;
     }
 
 }

@@ -22,8 +22,8 @@ public class CamelConfig {
 
     @Bean
     ArrayList startRoute() throws Exception {
-        camelContext.addRoutes(new HystrixRoute());
-        camelContext.addRoutes(new RestRoute());
-        return  new ArrayList();
+//        camelContext.addRoutes(new HystrixRoute());
+//        camelContext.addRoutes(new RestRoute());
+        return new ArrayList();
     }
 }

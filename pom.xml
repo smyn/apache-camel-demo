@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.cpf</groupId>
-    <artifactId>camel</artifactId>
+    <artifactId>apache-camel-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>camel</name>
     <description>Demo project for Spring Boot</description>
@@ -19,22 +19,22 @@
         <camel.version>2.18.0</camel.version>
     </properties>
 
-<!--
-    <dependencyManagement>
+    <!--
+        <dependencyManagement>
 
-        <dependencies>
-            &lt;!&ndash; Camel BOM &ndash;&gt;
-            <dependency>
-                <groupId>org.apache.camel.springboot</groupId>
-                <artifactId>camel-spring-boot-dependencies</artifactId>
-                <version>3.3.0</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
+            <dependencies>
+                &lt;!&ndash; Camel BOM &ndash;&gt;
+                <dependency>
+                    <groupId>org.apache.camel.springboot</groupId>
+                    <artifactId>camel-spring-boot-dependencies</artifactId>
+                    <version>3.3.0</version>
+                    <type>pom</type>
+                    <scope>import</scope>
+                </dependency>
+            </dependencies>
 
-    </dependencyManagement>
--->
+        </dependencyManagement>
+    -->
 
     <dependencies>
 
@@ -42,11 +42,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-<!--        <dependency>
-            <groupId>org.apache.camel.springboot</groupId>
-            <artifactId>camel-spring-boot-starter</artifactId>
-            <version>3.3.0</version>
-        </dependency>-->
+        <!--        <dependency>
+                    <groupId>org.apache.camel.springboot</groupId>
+                    <artifactId>camel-spring-boot-starter</artifactId>
+                    <version>3.3.0</version>
+                </dependency>-->
         <dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-spring-boot-starter</artifactId>
@@ -99,10 +99,10 @@
             <artifactId>camel-groovy</artifactId>
             <version>2.11.0</version>
         </dependency>
-<!--        <dependency>
-            <groupId>org.apache.camel.springboot</groupId>
-            <artifactId>camel-jetty-starter</artifactId>
-        </dependency>-->
+        <!--        <dependency>
+                    <groupId>org.apache.camel.springboot</groupId>
+                    <artifactId>camel-jetty-starter</artifactId>
+                </dependency>-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>

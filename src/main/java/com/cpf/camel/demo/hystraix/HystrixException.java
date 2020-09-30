@@ -4,7 +4,7 @@ package com.cpf.camel.demo.hystraix;
  * @作者：caopengfei
  * @时间：2020/5/28
  */
-public class HystrixException  extends RuntimeException{
+public class HystrixException extends RuntimeException {
     public HystrixException() {
     }
 
